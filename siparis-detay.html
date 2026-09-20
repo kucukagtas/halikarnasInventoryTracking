@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css">
+    <title>Sipariş Detayı</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Halikarnas Admin</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="kategori.html" class="nav-link">Kategoriler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="urun.html" class="nav-link">Ürünler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="slider.html" class="nav-link">Slider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="role.html" class="nav-link">Yetki</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kullanici.html" class="nav-link">Kullanıcı</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="siparis.html" class="nav-link active">Siparişler</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">G. Kaya</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="hesabim.html" class="dropdown-item">Hesabım</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Çıkış</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-3">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-header py-2 d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Sipariş No: #5</h5>
+                        <span class="badge bg-success p-2">Teslim Edildi</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive mb-4">
+                            <table class="table table-bordered table-striped mb-0">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th style="width: 50px;" class="text-center">Id</th>
+                                        <th style="width: 75px;" class="text-center">Resim</th>
+                                        <th>Ürün Adı</th>
+                                        <th class="nowrap">Fiyat</th>
+                                        <th style="width: 60px;" class="text-center">Adet</th>
+                                        <th class="nowrap">Toplam</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td class="text-center">
+                                            <img src="img/6.avif" class="img-fluid rounded" alt="Doxa SUB 300ß Caribbean">
+                                        </td>
+                                        <td>Doxa SUB 300ß Caribbean</td>
+                                        <td class="nowrap">124.500 ₺</td>
+                                        <td class="text-center">1</td>
+                                        <td class="nowrap">124.500 ₺</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td class="text-nowrap">Ara Toplam</td>
+                                        <td class="nowrap">103.750 ₺</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td class="text-nowrap">Vergi</td>
+                                        <td class="nowrap">20.750 ₺ (%20)</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td class="text-nowrap">Kargo</td>
+                                        <td class="nowrap">Ücretsiz</td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td colspan="4"></td>
+                                        <td class="text-nowrap">Toplam</td>
+                                        <td class="nowrap">124.500 ₺</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h6 class="fw-bold mb-2">Teslimat ve Ödeme Detayları</h6>
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 150px; min-width: 130px;" class="fw-bold bg-light">Teslim Tarihi</td>
+                                        <td>31/08/2026 14.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold bg-light">Ad Soyad</td>
+                                        <td>Emre Özcan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold bg-light">Teslimat Adresi</td>
+                                        <td>Yahyakaptan mah. Atatürk cad. No:123 İzmit/Kocaeli</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold bg-light">Fatura Adresi</td>
+                                        <td>Yahyakaptan mah. Atatürk cad. No:123 İzmit/Kocaeli</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold bg-light">Ödeme Bilgileri</td>
+                                        <td>1234-34**-****-**** (Yapı Kredi Bankası - 3 Taksit)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+:root {
+    --primary: #9d5175;
+    --primary-hover: #854563;
+    --primary-active: #753d58;
+    --navbar-bg: #519d79;
+    --navbar-border: #3f7b5f;
+}
+
+.text-gray-300 {
+    color: #dddfeb !important;
+}
+
+.border-left-primary {
+    border-left: .25rem solid #4e73df !important;
+}
+
+.border-left-success {
+    border-left: .25rem solid #1cc88a !important;
+}
+
+.border-left-warning {
+    border-left: .25rem solid #f6c23e !important;
+}
+
+.border-left-info {
+    border-left: .25rem solid #36b9cc !important;
+}
+
+/* Navbar */
+.navbar,
+.navbar.bg-dark {
+    background-color: #519d79 !important;
+    border-color: #3f7b5f !important;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: #ffffff !important;
+}
+
+/* Butonlar (#9d5175) */
+.btn-primary {
+    background-color: #9d5175 !important;
+    border-color: #9d5175 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #854563 !important;
+    border-color: #7d415e !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #753d58 !important;
+    border-color: #6d3952 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(157, 81, 117, 0.35) !important;
+}
+
+.btn-outline-primary {
+    color: #9d5175 !important;
+    border-color: #9d5175 !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: #9d5175 !important;
+    border-color: #9d5175 !important;
+    color: #ffffff !important;
+}
+
+/* Primary Metin ve Çerçeve */
+.text-primary {
+    color: #9d5175 !important;
+}
+
+.border-primary {
+    border-color: #9d5175 !important;
+}
+
+/* =========================================
+   Responsive ve Genel Düzenlemeler
+   ========================================= */
+
+/* Tablo Hücre Hizalamaları ve Dikey Ortalama */
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}
+
+/* Tabloların Yatay Kaydırma Desteği */
+.table-responsive {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+}
+
+/* Tablo İçindeki Görsellerin Standart Boyutlandırılması */
+.table td img {
+    max-height: 48px;
+    max-width: 70px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Slider Tablosundaki Yatay Görseller */
+.table td img.slider-table-img {
+    max-height: 52px;
+    max-width: 130px;
+    object-fit: cover;
+}
+
+/* Tablo Rozetleri ve Butonları Asla Kırılmasın */
+.table .badge,
+.table td .btn,
+.table th .btn {
+    white-space: nowrap;
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}
+
+/* Formlardaki Resim Önizleme Kutuları */
+.img-preview-box {
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+}
+
+.img-slider-preview {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Kart Başlığı Dikey Hizalama */
+.card-header {
+    min-height: 46px;
+}
+
+/* Mobil ve Tablet Ekran İyileştirmeleri */
+@media (max-width: 767.98px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .card-header h5.card-title {
+        font-size: 1.05rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.55rem 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.45rem;
+        font-size: 0.8rem;
+    }
+
+    /* Mobilde form etiketleri ve input aralıkları */
+    .col-form-label {
+        padding-bottom: 0.25rem;
+    }
+}
